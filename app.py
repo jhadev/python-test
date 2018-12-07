@@ -1,3 +1,5 @@
+import math
+
 print("python")
 print("python " * 10)
 
@@ -16,5 +18,39 @@ print(type(rating))
 is_published = False
 print(type(is_published))
 
-course_name = "Python"
+course_name = """Python
+Programming"""
+
 print(type(course_name))
+
+print(len(course_name))
+print(course_name[0:3])
+print(course_name[-2])
+
+first = "Joe"
+last = "Boxer"
+full = f"{first} {last}"
+print(full)
+
+o = y ** 10
+print(o)
+
+
+# comment
+# \" escape sequences
+# \'
+# \\
+# \n
+
+# uppercase variables to tell others its a constant
+PI = 3.14159265359
+print(math.floor(PI))
+
+p = (math.ceil(PI))
+print(p)
+
+b = input("x: ")
+
+print(int(b))
+print(float(b))
+print(bool(b))

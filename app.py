@@ -54,3 +54,38 @@ b = input("x: ")
 print(int(b))
 print(float(b))
 print(bool(b))
+
+aapl = 165.48
+
+if aapl >= 160:
+    message = "above low"
+else:
+    message = "below low"
+
+print(message)
+
+message = "Above Low" if aapl >= 160 else "Below Low"
+
+print(message)
+
+for x in "Python":
+    print(x)
+
+for x in range(0, 10, 2):
+    print(x)
+
+stocks = ["AAPL", "GOOG", "TWTR", "NFLX"]
+for stock in stocks:
+    if stock.startswith("A"):
+        print("Found")
+        break
+else:
+    print("Not Found")
+
+guess = 0
+answer = 9
+
+while answer != guess:
+    guess = int(input("Guess: "))
+else:
+    pass

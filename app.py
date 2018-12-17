@@ -68,6 +68,7 @@ message = "Above Low" if aapl >= 160 else "Below Low"
 
 print(message)
 
+# loops
 for x in "Python":
     print(x)
 
@@ -89,3 +90,30 @@ while answer != guess:
     guess = int(input("Guess: "))
 else:
     pass
+
+# functions
+
+
+def increment(number: int, by: int = 9) -> tuple:
+    return (number, number + by)
+
+
+print(increment(6))
+
+
+def multiply(*list):
+    total = 1
+    for number in list:
+        total *= number
+    return total
+
+
+print(multiply(2, 3, 4, 5))
+
+
+def save_user(**user):
+    print(user["id"])
+
+
+# dictionaries are just like objects in JS
+save_user(id=1, name="josh")
